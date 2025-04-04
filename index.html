@@ -177,7 +177,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom:10vw;
+            margin-bottom:3vw;
             
             font-size: 2rem;
         }
@@ -188,10 +188,12 @@
             align-items: center;
             grid-template-columns: repeat(3, 1fr);
             margin:auto;
+            gap: 20px;
+            
         }
         .fourthSection .grid img{
-            width: 80%;
-            height: 80%;
+            width: 50%;
+            height: 50%;
             border-radius: 10px;
 
         }
@@ -200,6 +202,8 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            background-color: #1c186a;
+            border-radius: 10px;
         }
         .fourthSection .grid .pro1 p{
             color: gray;
@@ -217,12 +221,45 @@
             cursor: pointer;
         }
 
+        .fifthSection .reach-out h1{
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            margin: 10vw 0 0 0;
+            font-size: 2rem;
+        }
+        .fifthSection .reach-out p{
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            color: gray;
+            margin: 10px 0 0 0;
+        }
+        .fifthSection .data div{
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            color: gray;
+            margin: 10px 0 0 0;
+            font-size: 1.5rem;
+            color: white;
+        }
 
-
-
-
-
-
+        .fifthSection .data div .btn{
+            background: rgb(31, 31, 95);
+            color: white;
+            border: 2px solid white;
+            padding: 5px 15px;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .fifthSection .data div span{
+            margin-right: 10px;
+        }
+        .fifthSection .data{
+            margin: 5vw;
+        }
 
 
 
@@ -269,7 +306,7 @@
             <div class="left">Ritik's Portfolio</div>
             <div class="right">
                 <ul>
-                    <li><a href="/">Home</a></li>
+                    <li><a href="">Home</a></li>
                     <li><a href="/">About</a></li>
 
                     <li><a href="/">Projects</a></li>
@@ -366,25 +403,43 @@
             <div class="projects"><h1>Projects</h1></div>
         <div class="grid">
             <div class="pro1">
-                <img src="assets/love_Calc.png" alt="project 1">
+                
                 <h1>Love Calculator</h1>
                 <p>A fun and responsive Love Calculator web app built using HTML, CSS, and JavaScript, generating playful compatibility scores based on names.</p>
-                <button class="btn">Demo</button>
+                <button class="btn"><a href="https://ritikattri773.github.io/Love_Calculator/">Demo</a></button>
             </div>
             <div class="pro1">
-                <img src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?cs=srgb&dl=pexels-anjana-c-169994-674010.jpg&fm=jpg" alt="project 1">
-                <h1>Project 1</h1>
-                <p>Project 1 description goes here. It should be a brief overview of what the project is about and its features.</p>
-                <button class="btn">Demo</button>
+                
+                <h1>Capstone</h1>
+                <p>A project by Newton School of Technology, built with HTML, CSS, and JavaScript, featuring interactive and responsive design to showcase web development skills.</p>
+                <button class="btn"><a href="https://ritikscapstone.netlify.app/">Demo</a></button>
             </div>
             <div class="pro1">
-                <img src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?cs=srgb&dl=pexels-anjana-c-169994-674010.jpg&fm=jpg" alt="project 1">
-                <h1>Project 1</h1>
-                <p>Project 1 description goes here. It should be a brief overview of what the project is about and its features.</p>
-                <button class="btn">Demo</button>
+                
+                <h1>Ritik's Portfolio</h1>
+                <p>A personal portfolio built with HTML, CSS, and JavaScript, featuring a responsive design to showcase my skills, projects, and experience.</p>
+                <button class="btn"><a href="/">Demo</a></button>
                 
             </div>
         </div>
+        </section>
+
+
+
+
+
+        <section class="fifthSection">
+            <div class="reach-out">
+
+                <h1>Reach Out</h1>
+                <p>If you have any questions or want to connect, feel free to reach out to me via email or LinkedIn.</p>
+            </div>
+            <div class="data">
+                <div><span><b>Email: </b></span>ritikattri773@gmail.com </div>
+                <div><span><b>LinkedIn: </b></span><button class="btn"><a href="https://www.linkedin.com/in/ritik-atri-b44a50315/">Linked In</a></button></div>
+                
+
+            </div>
         </section>
 
 
