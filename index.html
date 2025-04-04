@@ -51,7 +51,8 @@
             color: rgb(145, 145, 244);
             font-size: 1.03rem;
         }
-        main hr{
+
+        main hr {
             border: 0;
             background: #9c97f1;
             height: 1.2px;
@@ -79,6 +80,16 @@
             font-size: 3rem;
         }
 
+        .leftSection .btn {
+            background: rgb(31, 31, 95);
+            color: white;
+            border: 2px solid white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
         .rightSection img {
             width: 70%;
             /* border-radius: 50%; */
@@ -87,6 +98,7 @@
         .purple {
             color: rgb(155, 94, 213);
         }
+
         .text-gray {
             color: gray;
         }
@@ -99,11 +111,14 @@
         .secondSection {
             max-width: 80vw;
             margin: auto;
-            height: 80vw;
+            /* height: 1vw; */
         }
+
         .secondSection h1 {
             font-size: 1.7rem;
+
         }
+
         .secondSection .box {
             background: white;
             width: 80vw;
@@ -111,53 +126,137 @@
             margin: 100px 0;
             display: flex;
         }
+
         .secondSection .box .vertical {
             background: white;
             width: 1px;
             height: 50px;
             margin: 0 100px;
+
         }
 
 
 
         .image-top {
-            width:60px;
+            width: 60px;
             position: relative;
             top: -70px;
             left: -30px;
         }
-        .vertical-title{
+
+        .vertical-title {
             position: relative;
             top: 4px;
             left: -40px;
             width: 150px;
+            margin: 0 0 0 20px;
         }
+        .thirdSection{
+            margin:10vw ;
+        }
+
+        .thirdSection .About {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 15vw 0 0 0;
+            font-size: 2rem;
+
+        }
+
+        .thirdSection .About-decs {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: gray;
+;
+            
+
+        }
+        .fourthSection .projects{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom:10vw;
+            
+            font-size: 2rem;
+        }
+        
+        .fourthSection .grid {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            grid-template-columns: repeat(3, 1fr);
+            margin:auto;
+        }
+        .fourthSection .grid img{
+            width: 80%;
+            height: 80%;
+            border-radius: 10px;
+
+        }
+        .fourthSection .grid .pro1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .fourthSection .grid .pro1 p{
+            color: gray;
+            text-align: center;
+            margin: 10px 20px;
+        }
+
+        .fourthSection .btn {
+            background: rgb(31, 31, 95);
+            color: white;
+            border: 2px solid white;
+            padding: 5px 15px;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+
+
+
+
+
+
+
+
+
 
 
         footer {
             background-color: rgb(37, 37, 75);
-            
-            
+
+
         }
+
         .footer {
             display: flex;
-            justify-content: space-evenly; 
-            
+            justify-content: space-evenly;
+
         }
-        .footer ul{
+
+        .footer ul {
             list-style: none;
         }
-        .footer .footer-first{
+
+        .footer .footer-first {
             justify-content: center;
             align-items: center;
             display: flex;
         }
-        footer .footer-rights{
+
+        footer .footer-rights {
             color: gray;
             text-align: center;
             padding: 20px 0;
         }
-        a{
+
+        a {
             text-decoration: none;
             color: white;
         }
@@ -170,9 +269,9 @@
             <div class="left">Ritik's Portfolio</div>
             <div class="right">
                 <ul>
-                    <li><a href="/" >Home</a></li>
+                    <li><a href="/">Home</a></li>
                     <li><a href="/">About</a></li>
-                    
+
                     <li><a href="/">Projects</a></li>
                     <li><a href="/">Contact Me</a></li>
                 </ul>
@@ -186,6 +285,10 @@
                 Hi,My name is <span class="purple">Ritik</span>
                 <div>And I am a passionate</div>
                 <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn"><a href="assets/Resume-Ritik Atri (3).pdf">Download CV</a></button>
+                    <button class="btn"><a href="https://github.com/ritikattri773">Vist Github</a></button>
+                </div>
 
             </div>
             <div class="rightSection">
@@ -196,54 +299,111 @@
         <hr>
 
 
-        <section class="secondSection" >
+        <section class="secondSection">
             <span class="text-gray">What technologies I know so far</span>
-            <h1>🚀 Tech Stack / Languages I’m Comfortable With</h1>
+            <h1>Tech Stack / Languages I’m Comfortable With</h1>
             <div class="box">
                 <div class="vertical">
-                    <image class ="image-top" src="assets/Html.png" alt="HTML">
-                        <div class="vertical-title"><h1>HTML</h1></div>
+                    <image class="image-top" src="assets/Html.png" alt="HTML">
+                        <div class="vertical-title">
+                            <h1>HTML</h1>
+                        </div>
                 </div>
                 <div class="vertical">
-                    <image class ="image-top" src="assets/Css.png" alt="HTML">
-                        <div class="vertical-title"><h1>CSS</h1></div>
+                    <image class="image-top" src="assets/Css.png" alt="HTML">
+                        <div class="vertical-title">
+                            <h1>CSS</h1>
+                        </div>
                 </div>
                 <div class="vertical">
-                    <image class ="image-top" src="assets/Javascript.png" alt="HTML">
-                        <div class="vertical-title"><h1>Javascript</h1></div>
+                    <image class="image-top" src="assets/Javascript.png" alt="HTML">
+                        <div class="vertical-title">
+                            <h1>Javascript</h1>
+                        </div>
                 </div>
                 <div class="vertical">
-                    <image class ="image-top" src="assets/Node.png" alt="HTML">
-                        <div class="vertical-title"><h1>Node.js</h1></div>
+                    <image class="image-top" src="assets/Node.png" alt="HTML">
+                        <div class="vertical-title">
+                            <h1>Node.js</h1>
+                        </div>
                 </div>
                 <div class="vertical">
-                    <image class ="image-top" src="assets/react.png" alt="HTML">
-                        <div class="vertical-title"><h1>React.js</h1></div>
+                    <image class="image-top" src="assets/react.png" alt="HTML">
+                        <div class="vertical-title">
+                            <h1>React.js</h1>
+                        </div>
                 </div>
                 <div class="vertical">
-                    <image class ="image-top" src="assets/Python.png" alt="HTML">
-                        <div class="vertical-title"><h1>Python</h1></div>
+                    <image class="image-top" src="assets/Python.png" alt="HTML">
+                        <div class="vertical-title">
+                            <h1>Python</h1>
+                        </div>
                 </div>
             </div>
         </section>
 
-        <hr>
+        <section class="thirdSection">
+            <div class="About">
+                <h1>About Me</h1>
+            </div>
+            <div>
+
+                <div class="About-decs">
+                    <p>Hi, I'm Ritik Atri,
+                    </div>
+                    <div class="About-decs">A tech enthusiast and curious learner currently pursuing my
+                        B.Tech at Newton School of Technology.</div> <div class="About-decs"> enjoy building projects, solving problems, and constantly
+                        exploring new technologies to grow as a developer.</div><div class="About-decs"> Always up for a challenge and ready to learn
+                        something new!</div></p>
+                    </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="fourthSection">
+            <div class="projects"><h1>Projects</h1></div>
+        <div class="grid">
+            <div class="pro1">
+                <img src="assets/love_Calc.png" alt="project 1">
+                <h1>Love Calculator</h1>
+                <p>A fun and responsive Love Calculator web app built using HTML, CSS, and JavaScript, generating playful compatibility scores based on names.</p>
+                <button class="btn">Demo</button>
+            </div>
+            <div class="pro1">
+                <img src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?cs=srgb&dl=pexels-anjana-c-169994-674010.jpg&fm=jpg" alt="project 1">
+                <h1>Project 1</h1>
+                <p>Project 1 description goes here. It should be a brief overview of what the project is about and its features.</p>
+                <button class="btn">Demo</button>
+            </div>
+            <div class="pro1">
+                <img src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?cs=srgb&dl=pexels-anjana-c-169994-674010.jpg&fm=jpg" alt="project 1">
+                <h1>Project 1</h1>
+                <p>Project 1 description goes here. It should be a brief overview of what the project is about and its features.</p>
+                <button class="btn">Demo</button>
+                
+            </div>
+        </div>
+        </section>
+
+
 
 
         <footer>
-            <div class="footer" >
+            <div class="footer">
                 <div class="footer-first">
-                   <h1>Ritik's Portfolio</h1> 
+                    <h1>Ritik's Portfolio</h1>
 
                 </div>
                 <div class="footer-second">
                     <ul>
 
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
-                    
-                    <li><a href="/">Projects</a></li>
-                    <li><a href="/">Contact Me</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/">About</a></li>
+
+                        <li><a href="/">Projects</a></li>
+                        <li><a href="/">Contact Me</a></li>
                     </ul>
 
                 </div>
@@ -259,8 +419,8 @@
 
                 </div>
                 <div class="footer-fouth">
-                    
-                
+
+
                 </div>
 
 
@@ -268,12 +428,12 @@
 
 
             </div>
-        <div class="footer-rights">All Rigths Reserved | Copyright ©</div>
+            <div class="footer-rights">All Rigths Reserved | Copyright ©</div>
         </footer>
 
     </main>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <!-- Setup and start animation! -->
+    
     <script>
         var typed = new Typed('#element', {
             strings: ['Web Developer', 'Programmer', 'Designer', "Problem Solver"],
