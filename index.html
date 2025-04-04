@@ -14,6 +14,7 @@
         * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box; 
         }
 
         body {
@@ -297,6 +298,68 @@
             text-decoration: none;
             color: white;
         }
+        @media only screen and (max-width: 768px) {
+            nav {
+                flex-direction: column; /* changed from row to column for mobile */
+                height: auto; /* allow height to grow */
+            }
+
+            nav ul {
+                flex-direction: column; /* menu items stack */
+                padding: 10px 0;
+            }
+
+            .firstSection {
+                flex-direction: column; /* changed layout on small screens */
+                text-align: center;
+            }
+
+            .firstSection > div {
+                width: 80%; /* full width in mobile */
+            }
+
+            .rightSection img {
+                width: 100%; /* image fills container */
+            }
+
+            .secondSection .box {
+                flex-direction: column; /* vertical layout for tech icons */
+                height: auto;
+                align-items: center;
+            }
+
+            .secondSection .box .vertical {
+                margin: 40px 0; /* space between icons */
+            }
+
+            .thirdSection .About,
+            .thirdSection .About-decs {
+                flex-direction: column;
+                text-align: center;
+                margin: 10px auto;
+                padding: 0 10px;
+            }
+
+            .fourthSection .grid {
+                grid-template-columns: 1fr; /* single column on mobile */
+            }
+
+            .fourthSection .grid img {
+                width: 100%;
+                height: auto;
+            }
+
+            .fifthSection .data div {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
     </style>
 </head>
 
@@ -306,11 +369,11 @@
             <div class="left">Ritik's Portfolio</div>
             <div class="right">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="/">About</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
 
-                    <li><a href="/">Projects</a></li>
-                    <li><a href="/">Contact Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
@@ -379,7 +442,7 @@
             </div>
         </section>
 
-        <section class="thirdSection">
+        <section class="thirdSection" id="about">
             <div class="About">
                 <h1>About Me</h1>
             </div>
@@ -399,7 +462,7 @@
 
 
 
-        <section class="fourthSection">
+        <section class="fourthSection" id="projects">
             <div class="projects"><h1>Projects</h1></div>
         <div class="grid">
             <div class="pro1">
@@ -428,7 +491,7 @@
 
 
 
-        <section class="fifthSection">
+        <section class="fifthSection" id="contact">
             <div class="reach-out">
 
                 <h1>Reach Out</h1>
@@ -454,11 +517,11 @@
                 <div class="footer-second">
                     <ul>
 
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/">About</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
 
-                        <li><a href="/">Projects</a></li>
-                        <li><a href="/">Contact Me</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
                     </ul>
 
                 </div>
